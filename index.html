@@ -5,43 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Julia | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<main class="website__conatiner">
+  <section class="blue-card__conatiner">
+    <h1 class="blue-card__descriptive-result-title">
+      Your Result
+    </h1>
+    <div class="blue-card__circle">
+      <h2 class="blue-card__result-title">
+        76<br> </h2>
+        <h3 class="blue-card__result-title-2">of 100</h3>
+    </div>
+    <h4 class="blue-card__praise-title">
+      Great
+    </h4>
+    <p class="blue-card__descriptive-sub-title">
+      You scored higher than 65% of the people who have taken these tests.
+    </p>
+  </section>
+  <section class="white-card__conatiner">
+    <h5 class="white-card__main-title">
+      Summary
+    </h5>
+    <div class="white-card__statistics-flexgroup red-bg">
+        <div class="sub-flexgroup">
+          <img src="/assets/images/icon-reaction.svg" alt="" class="white-card__icon-1">
+          <p class="emotion-red">Reaction</p>
+        </div>
+      <p class="stat">80<span> / 100</span></p>
+    </div>
+    <div class="white-card__statistics-flexgroup yellow-bg">
+      <div class="sub-flexgroup">
+        <img src="/assets/images/icon-memory.svg" alt="" class="white-card__icon-2">
+        <p class="emotion-yellow">Memory</p>
+      </div>
+      <p class="stat">92 <span>/ 100</span></p>
+    </div>
+    <div class="white-card__statistics-flexgroup green-bg">
+      <div class="sub-flexgroup">
+        <img src="/assets/images/icon-verbal.svg" alt="" class="white-card__icon-3">
+        <p class="emotion-green">Verbal</p>
+      </div>
+      <p class="stat">61<span> / 100</span></p>
+    </div>
+    <div class="white-card__statistics-flexgroup blue-bg">
+        <div class="sub-flexgroup">
+          <img src="/assets/images/icon-visual.svg" alt="" class="white-card__icon-4">
+              <p class="emotion-blue">Visual</p>
+        </div>
+    <p class="stat">72<span> / 100</span></p>
+    </div>
+    <button class="white-card__end-button">
+      Continue
+    </button>
+  </section>
+</main>
 </body>
 </html>

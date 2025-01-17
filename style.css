@@ -29,3 +29,207 @@
 --clr-neutral-Darkgrayblue: hsl(224, 30%, 27%);
 
 }
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    display: grid;
+    font-family: var(--ff-main);
+    font-size: var(--ff-size);
+  }
+  .blue-card__conatiner {
+    text-align: center;
+    padding: 2.5rem;
+    padding-top: 1.5rem;
+    color: white;
+    background: linear-gradient(
+    var(--clr-gradient-Lightslateblue),
+    var(--clr-gradient-Lightroyalblue)
+);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  h1 {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+  }
+  .blue-card__circle {
+    place-self: center;
+    padding: 2rem;
+    width: 11rem;
+    border-radius: 50%;
+    background: linear-gradient(
+        var(--clr-gradient-Violetblue),
+        var(--clr-gradient-Persianblue)
+    );
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    opacity: 0.8;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: .3rem;
+  }
+  .blue-card__descriptive-sub-title {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  .white-card__conatiner {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    display: grid;
+  }
+  .white-card__main-title {
+    font-size: 1.1rem;
+    color: black;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+  .white-card__statistics-flexgroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sub-flexgroup {
+    display: flex;
+    gap: .5rem;
+  }
+  .emotion-red {
+    color: var(--clr-primary-Lightred);
+    font-weight: var(--fw-light);
+  }
+  .emotion-yellow {
+    color: var(--clr-primary-Orangeyyellow);
+    font-weight: var(--fw-light);
+  }
+  .emotion-green {
+    color: var(--clr-primary-Greenteal);
+    font-weight: var(--fw-light);
+  }
+  .emotion-blue {
+    color: var(--clr-primary-Cobaltblue);
+    font-weight: var(--fw-light);
+  }
+  .red-bg {
+    background-color:  rgba(255, 87, 87, 0.1);
+    border-radius: 0.5rem;
+  }
+  .yellow-bg {
+   background-color:  hsl(39, 100%, 56%, 0.1);
+   border-radius: 0.5rem;
+  }
+  .green-bg {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    border-radius: 0.5rem;
+  }
+  .blue-bg {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    border-radius: 0.5rem;
+  }
+  button {
+    border: transparent;
+    background: var(--clr-neutral-Darkgrayblue);
+    padding: .7rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: var(--fw-mid);
+    cursor: pointer;
+  }
+  button:hover {
+    transition: background 1s ease;
+    background: linear-gradient(
+        var(--clr-gradient-Lightslateblue),
+        var(--clr-gradient-Lightroyalblue)
+    );
+  }
+  .stat span {
+    opacity: 0.4;
+    font-weight: var(--fw-mid);
+  }
+  @media (min-width: 700px) {
+    body {
+        height: 100%;
+        display: grid;
+        place-content: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto;
+    }
+    .blue-card__conatiner {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 320px;
+        border-radius: 2rem;
+        z-index: 2;
+        margin-left: 1rem;
+    }
+    .white-card__conatiner {
+        grid-column: 2;
+        grid-row: 1;
+        max-width: 380px;
+        padding-left: 4rem;
+        position: relative;
+        right: 30px;
+        box-shadow: 0px 1px 8px  hsla(241, 81%, 54%, 0.479);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+  }
