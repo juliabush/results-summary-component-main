@@ -103,6 +103,7 @@
     margin-bottom: 1rem;
   }
   .blue-card__circle {
+    display: grid;
     place-self: center;
     padding: 2rem;
     width: 11rem;
