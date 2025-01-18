@@ -85,6 +85,8 @@
     font-size: var(--ff-size);
   }
   .blue-card__conatiner {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 2.5rem;
     padding-top: 1.5rem;
@@ -103,18 +105,16 @@
     margin-bottom: 1rem;
   }
   .blue-card__circle {
-    display: grid;
-    place-self: center;
-    position: fixed;
     padding: 2rem;
-    width: 11rem;
+    width: 176px;
     border-radius: 50%;
     background: linear-gradient(
         var(--clr-gradient-Violetblue),
         var(--clr-gradient-Persianblue)
     );
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 13.6rem;
   }
   h2 {
     font-size: 3rem;
@@ -233,5 +233,17 @@
         box-shadow: 0px 1px 8px  hsla(241, 81%, 54%, 0.479);
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
+    }
+    .blue-card__circle {
+      padding: 2rem;
+      width: 176px;
+      border-radius: 50%;
+      background: linear-gradient(
+          var(--clr-gradient-Violetblue),
+          var(--clr-gradient-Persianblue)
+      );
+      font-size: 1rem;
+      margin-bottom: 3rem;
+      margin-left: 2rem;
     }
   }
