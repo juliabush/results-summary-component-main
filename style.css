@@ -105,6 +105,7 @@
   .blue-card__circle {
     display: grid;
     place-self: center;
+    position: fixed;
     padding: 2rem;
     width: 11rem;
     border-radius: 50%;
